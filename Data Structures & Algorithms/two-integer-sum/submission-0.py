@@ -5,10 +5,9 @@ class Solution:
 
         for i, num in enumerate(nums):
             complement = target - num
+            
             if complement in seen:
                 return [seen[complement], i]
+            
             else:
                 seen[num] = i
-
-
-     
